@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  background-position: auto;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* Main Container */
+.mainwrapper {
+  width: 65%;
+  margin: auto;
+}
+
+/* Navbar Container */
+.mainwrapper .header {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px 20px;
+}
+
+.mainwrapper .header .navbarlinks ul {
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
+}
+
+.mainwrapper .welcomewrap {
+  margin-top: 20px;
+  border: 1px solid black;
+  height: 300px;
+  width: auto;
+  display: flex;
+}
+
+.mainwrapper .welcomewrap .wrp_text {
+  width: 20%;
+  border: 1px solid red;
+  display: flex;
+  /* justify-content: center; */
+  text-align: center;
+  align-items: center;
+}
+
+.mainwrapper .welcomewrap .wrp_text h1 {
+  margin: auto;
+  /* width: 110px; */
+  font-size: 70px;
+}
+
+.mainwrapper .welcomewrap .wrp_slides {
+  width: 80%;
+  background-color: bisque;
+  border: 1px solid red;
+}
+
+/* Information Container */
+.mainwrapper .information_cards {
+  margin-top: 20px;
+  height: auto;
+  /* border-bottom: 1px solid black; */
+  /* padding: 0 0 30px; */
+}
+
+.mainwrapper .information_cards ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.mainwrapper .information_cards ul li {
+  border: 1px solid black;
+  width: 25%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: space-between;
+  padding: 5px 5px 5px;
+}
+
+.mainwrapper .information_cards ul li p {
+  height: 75px;
+  text-align: center;
+}
+
+.mainwrapper .information_cards ul li button {
+  width: 70px;
+  justify-self: center;
+}
+
+/* Video Container */
+.mainwrapper .popvideos_wrap {
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.mainwrapper .popvideos_wrap .wrptitle {
+  padding: 5px 0 0;
+  text-align: center;
+  border: 1px solid blue;
+}
+
+.mainwrapper .popvideos_wrap .wrpvideos {
+  border: 1px solid red;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.faqwrapper {
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.faqwrapper h1 {
+  margin: 20px 0 20px;
+  text-align: center;
+}
+
+.faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq {
+  background-color: transparent;
+  border: 1px solid #9fa4a8;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3 ease;
+}
+
+.faq.active {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq.active::before,
+.faq.active::after {
+  content: "\f075";
+  font-family: "Font Awesome 5 Free";
+  color: #2ecc71;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+}
+
+.faq.active::before {
+  color: #3498db;
+  top: -10px;
+  left: -30px;
+  transform: rotateY(180deg);
+}
+
+.faq-title {
+  margin: 0 35px 0 0;
+}
+
+.faq-text {
+  display: none;
+  margin: 30px 0 0;
+}
+
+.faq.active .faq-text {
+  display: block;
+}
+
+.faq-toggle {
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+.faq-toggle:focus {
+  outline: 0;
+}
+
+.faq-toggle .fa-times {
+  display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+  color: #fff;
+  display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+  display: none;
+}
+
+.faq.active .faq-toggle {
+  background-color: #9fa4a8;
+}
+
+.endinformation {
+  border: 1px solid black;
+  margin-top: 20px;
+  width: auto;
+  height: 400px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border: 1px solid;
+  width: auto;
+  height: 90px;
+}/*# sourceMappingURL=style.css.map */
